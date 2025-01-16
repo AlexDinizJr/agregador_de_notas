@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/stars.css">
+</head>
+<body>
+
+    <!-- Barra de login e cadastro -->
+    <div class="top-bar">
+        <!-- Implementar cadastro aqui se sobrar tempo -->
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <section class="hero">
+            <h1><a href="index.html"><img src="images/TopReview.png"></a></h1>
+        </section>
+            <nav class="category-menu">
+                <ul>
+                    <li><a href="movies.html">Filmes</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="musics.html">Músicas</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Título da categoria -->
+    <main>
+        <div class="grid-container" id="category-reviews">
+            <!-- Grid preenchido com JavaScript -->
+        </div>
+        <div class="back-button-container">
+            <button id="back-button-menu" onclick="location.href='index.html';">Voltar</button>
+        </div>
+    
+    </main>
+    <script src="text/data.js"></script>
+    <script src="text/rating.js"></script>
+    <script src="text/reviews.js"></script>
+    <script>
+        // Exibe somente os games
+        displayCategoryReviews("games");
+    </script>
+
+</body>
+</html>
+

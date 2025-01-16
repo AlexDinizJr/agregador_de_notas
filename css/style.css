@@ -1,0 +1,247 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+h1 {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #555555;
+    text-align-last: center;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #222;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+a:hover {
+    color: #ffcc00; /* Cor de destaque para links */
+}
+
+/* Barra superior para login e cadastro */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.top-bar a:hover {
+    color: #00ff73;
+}
+
+/* Estilo do topo da página */
+header {
+    background-color: #333; /* Cor de fundo sofisticada */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffcc00; /* Cor de destaque */
+}
+
+header h1:hover {
+    color: #555;
+}
+
+/* Estilo do menu de categorias */
+.category-menu {
+    background-color: #444; /* Cor de fundo mais suave */
+    padding: 15px; /* Mais espaçamento vertical */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px 0;
+}
+
+/* Ajuste nas listas de itens */
+.category-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links do menu */
+.category-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.category-menu ul li a:hover {
+    background-color: #333; /* Fundo mais escuro no hover */
+    color: #00ff94; /* Amarelo no hover */
+    transform: scale(1.05); /* Pequeno aumento ao passar o mouse */
+}
+
+/* Estilo da seção de destaque */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    position: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px 40px;
+    background-color: #00ff94; /* Fundo um pouco mais suave que o #333 */
+    font-size: 2.2rem; /* Tamanho maior, mas mais suave */
+    color: #ffffff; /* Mantém o contraste com o fundo */
+    font-weight: 600; /* Reduz um pouco a espessura da fonte */
+    border-radius: 10px; /* Bordas levemente arredondadas para suavidade */
+}
+
+.hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 1.8em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.back-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#back-button-menu {
+    background-color: #00ff94;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-button {
+    background: none;
+    border: none;
+    color: #00ff94;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#back-button::before {
+    content: "←";
+    font-size: 30px;
+    font-weight: bold;
+    color: #00ff94;
+    transition: color 0.3s ease;
+}
+
+#back-button:hover {
+    color: #007c31;
+}
+
+#back-button:hover::before {
+    color: #007c31;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .category-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}

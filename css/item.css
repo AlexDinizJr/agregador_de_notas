@@ -1,0 +1,166 @@
+/* Estilo para a página dedicada */
+.dedicated-page {
+    width: 100%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Container principal para o conteúdo */
+.content-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Título da análise */
+.review-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Imagem de wallpaper */
+.review-wallpaper {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.review-wallpaper img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.review-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Container de vídeo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Container de música */
+.music-container {
+    display: flex;
+    justify-content: center; /* Centraliza o iframe horizontalmente */
+    align-items: center;     /* Centraliza o iframe verticalmente */
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 20px; /* Espaço interno para o player */
+}
+
+/* Player de música em iframe */
+.music-container iframe {
+    width: 100%;            /* O iframe ocupa toda a largura do contêiner */
+    max-width: 600px;       /* Largura máxima do player */
+    height: 80px;           /* Altura ideal para players de música */
+    border-radius: 8px;
+}
+
+/* Estilo para a média de avaliação */
+.average-rating {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para as estrelas */
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+/* Container das estrelas */
+.stars-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Estilo para cada estrela */
+.star {
+    font-size: 2rem;
+    color: #ccc; /* Cor padrão para estrelas */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Estilo para estrelas que estão em hover */
+.star.hover {
+    color: gold; /* Cor dourada para o efeito de hover */
+}
+
+/* Estilo para estrelas que já foram avaliadas */
+.star.rated {
+    color: gold; /* Cor dourada para as estrelas 'clicadas' */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 15px;
+    }
+
+    .review-title {
+        font-size: 2rem;
+    }
+
+    .review-description {
+        font-size: 1rem;
+    }
+
+    .average-rating {
+        font-size: 1.2rem;
+    }
+
+    .review-wallpaper img {
+        max-width: 100%; /* Garantir que a imagem ocupe toda a largura */
+        height: auto; /* Manter a altura proporcional */
+    }
+}

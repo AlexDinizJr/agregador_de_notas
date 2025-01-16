@@ -1,0 +1,44 @@
+/* Estilo para as estrelas */
+.star {
+    font-size: 2rem;
+    color: #bbb; /* Cor neutra para a avaliação baseada na média */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    margin: 0 5px;
+}
+
+.star:hover,
+.star.hover {
+    color: #f1c40f; /* Amarelo mais claro ao passar o cursor */
+}
+
+.star.non-rated {
+    color: #bbb; /* Torna douradas as estrelas com a classe 'rated' */
+}
+
+.star.rated {
+    color: gold; /* Torna douradas as estrelas com a classe 'rated' */
+}
+
+.star.selected {
+    color: gold; /* Dourado fixo para estrelas após a avaliação */
+}
+
+/* Foco acessível */
+.star:focus {
+    outline: none;
+    transform: scale(1.2);
+    color: #f1c40f;
+}
+
+/* Para estrelas não interativas */
+.star.non-interactive {
+    cursor: default;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .star {
+        font-size: 1.8rem;
+    }
+}

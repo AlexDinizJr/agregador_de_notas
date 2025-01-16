@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopReview - Análises de Jogos, Filmes e Músicas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/stars.css">
+</head>
+<body>
+
+    <!-- Barra de login e cadastro -->
+    <div class="top-bar">
+        <!-- Implementar cadastro aqui se sobrar tempo -->
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <section class="hero">
+            <h1><a href="index.html"><img src="images/TopReview.png"></a></h1>
+        </section>
+            <nav class="category-menu">
+                <ul>
+                    <li><a href="movies.html">Filmes</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="musics.html">Músicas</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Grid com as análises em tendência -->
+    <main>
+        <section id="trending-section">
+            <h1 class="hero-title">Análises Relevantes</h1>
+            <div id="trending-reviews" class="grid-container"></div>
+        </section>
+    </main>
+    <script src="text/reviews.js"></script>
+    <script src="text/rating.js"></script>
+    <script src="text/data.js"></script>
+
+    <!-- DOM que chama a função de carregar as análises mais bem avaliadas de todas as categorias assim que a página principal abrir -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadTrendingReviews();
+        });
+    </script>
+    
+</body>
+</html>
